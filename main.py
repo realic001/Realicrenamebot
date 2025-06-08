@@ -51,6 +51,15 @@ class AutoRenameBot:
         application.add_handler(
             CommandHandler("broadcast", self.admin_handlers.broadcast_command))
         application.add_handler(
+                        CommandHandler("getfmt", self.bot_handlers.getfmt_command))
+        application.add_handler(
+            CommandHandler("clear", self.bot_handlers.clear_command))
+        application.add_handler(
+            CommandHandler("set_media", self.bot_handlers.set_media_command))
+        application.add_handler(
+            CommandHandler("metadata", self.bot_handlers.metadata_command))
+        application.add_handler(
+            CommandHandler("mode", self.bot_handlers.mode_command))
             CommandHandler("ban", self.admin_handlers.ban_command))
         application.add_handler(
             CommandHandler("unban", self.admin_handlers.unban_command))
